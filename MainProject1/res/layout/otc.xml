@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding = "10dp">
+
+    <TextView
+        android:id="@+id/tv_otc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="OTC"
+        android:gravity = "center"
+        android:background = "#000000"
+        android:textColor = "#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ScrollView 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="0dp"
+        android:layout_weight = "1" >
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	        
+	        <LinearLayout
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "wrap_content"
+	            android:orientation = "horizontal" >
+                 <TextView
+	                android:layout_width = "wrap_content"
+	                android:layout_height = "wrap_content"
+	                android:text = "TTD" />
+                 <EditText
+		            android:id = "@+id/payment_amount"
+		            android:layout_width = "0dp"
+		            android:layout_height = "wrap_content"
+		            android:hint = "Amount"
+		            android:layout_weight = "1"
+		            android:inputType = "numberDecimal" />    
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "wrap_content"
+	            android:orientation = "horizontal" >
+		        <EditText
+				    android:layout_width = "0dp"
+				    android:layout_height = "wrap_content"
+				    android:layout_weight = "1"
+				    android:hint = "Merchant ID"
+				    android:id = "@+id/merchant" 
+				    android:inputType = "numberDecimal"/>
+		        <ImageView
+		            android:layout_width = "wrap_content"
+		            android:layout_height = "wrap_content"
+		            android:src = "@drawable/ic_qr_code"
+		            android:id = "@+id/scan_qr"
+		            android:clickable = "true" />
+		            
+		    </LinearLayout>
+     		<Spinner
+     		    android:layout_width = "fill_parent"
+     		    android:layout_height = "wrap_content"
+     		    android:prompt = "@string/select_payment"
+     		    android:id = "@+id/otc_payment_methods" />
+     		<Button
+     		    android:layout_width = "fill_parent"
+     		    android:layout_height = "wrap_content"
+     		    android:text = "Make Payment"
+     		    android:id = "@+id/make_otc" />
+	    </LinearLayout>
+	</ScrollView>
+	
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity = "bottom" >
+	        
+	</LinearLayout>
+
+</LinearLayout>

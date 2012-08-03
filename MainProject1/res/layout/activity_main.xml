@@ -1,0 +1,100 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop = "10dp" 
+    android:paddingLeft = "10dp" 
+    android:paddingRight = "10dp" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/top_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/topup"/>
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width = "fill_parent"
+        android:layout_height = "0dp"
+        android:orientation = "vertical"
+        android:layout_weight = "1">
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pay"/>
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "horizontal" >
+
+            <Button
+                android:id="@+id/bill_pay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "1"
+                android:text= "@string/bill" 
+                android:visibility = "invisible"/>
+
+            <Button
+                android:id = "@+id/otc"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "1"
+                android:text = "@string/business" 
+                android:visibility = "invisible"/>
+            <Button
+                android:id = "@+id/p2p"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"                
+                android:layout_weight = "1"
+                android:text = "@string/person" 
+                android:visibility = "invisible"/>
+        </LinearLayout>
+    </LinearLayout>    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/my_acct"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_acct"/>
+       <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "horizontal" >
+
+            <Button
+                android:id = "@+id/bank_accounts"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "1"
+                android:text = "@string/accounts" 
+                android:visibility = "invisible"/>
+            
+           <Button
+                android:id = "@+id/history"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"                
+                android:layout_weight = "1"
+                android:text = "@string/history" 
+                android:visibility = "invisible"/>
+           
+           <Button
+                android:id = "@+id/edit_acct"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"                
+                android:layout_weight = "1"
+                android:text = "@string/prefs" 
+                android:visibility = "invisible" />
+         </LinearLayout>
+    </LinearLayout>
+    <!-- etc -->
+</LinearLayout>

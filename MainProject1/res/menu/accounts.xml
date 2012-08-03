@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id = "@+id/home_action"
+        android:icon = "@drawable/ic_android_home_48"
+        android:text = "Home"
+        android:showAsAction = "ifRoom|withText" />
+    
+    <item
+        android:id = "@+id/new_account_action"
+        android:icon = "@drawable/ic_new"
+        android:text = "New Account"
+        android:showAsAction = "ifRoom|withText" />
+
+</menu>

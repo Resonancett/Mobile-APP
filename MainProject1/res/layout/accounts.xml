@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_otc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accounts"
+        android:gravity = "center"
+        android:background = "#000000"
+        android:textColor = "#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ScrollView 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="0dp"
+        android:layout_weight = "1" >
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	        <Spinner
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "wrap_content"
+	            android:id = "@+id/bank_accounts" />
+	        <Button
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "wrap_content"
+	            android:id = "@+id/manage_wallet"
+	            android:text = "@string/wallet" />
+	        
+	        <LinearLayout
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "70dp"
+	            android:orientation = "vertical"
+	            android:paddingLeft = "10dp"
+	            android:paddingRight = "10dp"
+	            android:paddingTop = "5dp"
+	            android:paddingBottom = "5dp"
+	            android:clickable = "true"
+	            android:id = "@+id/set_primary">
+	           
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/primary_acct"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            <TextView
+	                android:id = "@+id/primary_acct"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor = "#C0C0C0"
+	                android:paddingLeft = "20dp"
+	                android:paddingTop = "5dp" />
+
+	        </LinearLayout>
+	    </LinearLayout>
+	</ScrollView>       
+</LinearLayout>

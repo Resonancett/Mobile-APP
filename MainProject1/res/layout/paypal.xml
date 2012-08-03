@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_otc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/paypal"
+        android:gravity = "center"
+        android:background = "#000000"
+        android:textColor = "#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ScrollView 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="0dp"
+        android:layout_weight = "1" >
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	        
+	    </LinearLayout>
+	</ScrollView>
+	
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity = "bottom" >
+	    
+		<LinearLayout
+	        android:orientation = "horizontal"
+	        android:layout_width = "fill_parent"
+	        android:layout_height = "wrap_content">
+	    
+   		    <Button
+		        android:id="@+id/home"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="bottom"
+		        android:text = "Home" />
+	    </LinearLayout>
+	        
+	</LinearLayout>
+
+</LinearLayout>

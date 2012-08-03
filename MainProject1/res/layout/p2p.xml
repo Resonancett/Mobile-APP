@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_otc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="@string/p2p"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <TabHost 
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:id="@+id/tabHost"
+	    xmlns:android="http://schemas.android.com/apk/res/android" >
+	    
+	    <TabWidget
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@android:id/tabs" />
+	     <FrameLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="fill_parent"
+	     android:id="@android:id/tabcontent"  >
+	     
+		    <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/tab1"
+			    android:orientation="vertical"
+			    android:paddingTop="70dp" >
+			    
+		        <ScrollView 
+			        xmlns:android="http://schemas.android.com/apk/res/android"
+			        android:layout_width="fill_parent" 
+			        android:layout_height="0dp"
+			        android:layout_weight = "1" >
+			
+				    <LinearLayout
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical" >
+				        
+				        <LinearLayout
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:orientation="horizontal" >
+				            
+				            <TextView
+					            android:layout_width = "wrap_content"
+				    	        android:layout_height = "wrap_content"
+				        	    android:text = "TTD" />
+				        
+					       	 <EditText
+				    	        android:id = "@+id/p2p_send_amount"
+				        	    android:layout_width = "0dp"
+				            	android:layout_height = "wrap_content"
+					            android:layout_weight = "1"
+					            android:hint = "Payment amount"
+					            android:inputType = "numberDecimal" />
+				            
+				        </LinearLayout>
+				        
+				        <LinearLayout
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:orientation="horizontal" >
+				           	        
+					       	 <EditText
+				    	        android:id = "@+id/send_phone"
+				        	    android:layout_width = "0dp"
+				            	android:layout_height = "wrap_content"
+					            android:layout_weight = "1"
+					            android:hint = "Recipient"
+					            android:inputType = "phone" />
+			
+					       	 <ImageButton
+				    	        android:id = "@+id/select_contact_send"
+				        	    android:layout_width = "wrap_content"
+				            	android:layout_height = "wrap_content"
+					            android:src = "@drawable/ic_contacts_48"
+					            android:text = "Select from Contacts"/>
+				        </LinearLayout>
+				        
+				        <LinearLayout
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:orientation="horizontal" >
+				            
+					       	<Spinner
+						        android:id="@+id/payment_method"
+				    		    android:layout_width="0dp"
+				        		android:layout_height="wrap_content"
+				        		android:layout_weight = "1" />
+				        </LinearLayout>
+				        
+				        <Button
+				            android:id = "@+id/p2p_send"
+				            android:layout_width = "fill_parent"
+				            android:layout_height = "wrap_content"
+				            android:text = "Send" />
+				        
+				        <Button
+					        android:id="@+id/auto_p2p"
+					        android:layout_width = "fill_parent"
+					        android:layout_height = "wrap_content"
+					        android:text = "Set/View Automatic P2P" />
+				        
+				        			    <LinearLayout
+				        android:orientation = "horizontal"
+				        android:layout_width = "fill_parent"
+				        android:layout_height = "wrap_content"
+				        android:gravity = "bottom" >
+			    
+			    </LinearLayout>
+				            
+				    </LinearLayout>
+	
+				</ScrollView>
+				
+
+		        
+		    
+		    </LinearLayout>
+		     
+		    <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:id="@+id/tab2"
+			    android:orientation="vertical"
+			    android:paddingTop="70dp" >
+			    
+		        <ScrollView 
+			        xmlns:android="http://schemas.android.com/apk/res/android"
+			        android:layout_width="fill_parent" 
+			        android:layout_height="0dp"
+			        android:layout_weight = "1" >
+			
+				    <LinearLayout
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical" >
+				        
+				        <LinearLayout
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:orientation="horizontal" >
+				            
+				            <TextView
+					            android:layout_width = "wrap_content"
+				    	        android:layout_height = "wrap_content"
+				        	    android:text = "TTD" />
+				        
+					       	 <EditText
+				    	        android:id = "@+id/p2p_request_amount"
+				        	    android:layout_width = "0dp"
+				            	android:layout_height = "wrap_content"
+					            android:layout_weight = "1"
+					            android:hint = "Payment amount"
+					            android:inputType = "numberDecimal" />
+				            
+				        </LinearLayout>
+				        
+				        <LinearLayout
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:orientation="horizontal" >
+				           	        
+					       	 <EditText
+				    	        android:id = "@+id/phone_request"
+				        	    android:layout_width = "0dp"
+				            	android:layout_height = "wrap_content"
+					            android:layout_weight = "1"
+					            android:hint = "Request from..."
+					            android:inputType = "phone" />
+			
+					       	 <ImageButton
+				    	        android:id = "@+id/select_contact_request"
+				        	    android:layout_width = "wrap_content"
+				            	android:layout_height = "wrap_content"
+					            android:src = "@drawable/ic_contacts_48"
+					            android:text = "Select from Contacts"/>
+				        </LinearLayout>
+				        				        
+				        <Button
+				            android:id = "@+id/p2p_request"
+				            android:layout_width = "fill_parent"
+				            android:layout_height = "wrap_content"
+				            android:text = "Request payment" />
+				        
+				        <LinearLayout
+					        android:orientation = "horizontal"
+					        android:layout_width = "fill_parent"
+					        android:layout_height = "wrap_content"
+					        android:gravity = "bottom" >
+			    
+			    </LinearLayout>
+				        
+				            
+				    </LinearLayout>
+
+				</ScrollView>
+				
+
+		        
+		    </LinearLayout>
+		     
+		    
+	    </FrameLayout>
+    
+    </TabHost>
+
+</LinearLayout>

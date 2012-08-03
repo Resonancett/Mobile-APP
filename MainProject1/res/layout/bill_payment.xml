@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_otc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Bill Payment"
+        android:gravity = "center"
+        android:background = "#000000"
+        android:textColor = "#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ScrollView 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="0dp"
+        android:layout_weight = "1"
+        android:paddingLeft = "10dp"
+        android:paddingTop = "10dp"
+        android:paddingBottom = "5dp"
+        android:paddingRight = "5dp" >
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+
+		        <Spinner
+		            android:layout_width = "0dp"
+		            android:layout_height = "wrap_content"
+		            android:layout_weight = "1"
+		            android:id = "@+id/payees" />
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+
+		        <Spinner
+		            android:layout_width = "0dp"
+		            android:layout_height = "wrap_content"
+		            android:layout_weight = "1"
+		            android:id = "@+id/bills" />
+	        </LinearLayout>
+     	    <LinearLayout
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "70dp"
+	            android:orientation = "vertical"
+	            android:paddingLeft = "10dp"
+	            android:paddingRight = "10dp"
+	            android:paddingTop = "5dp"
+	            android:paddingBottom = "5dp"
+	            android:clickable = "true"
+	            android:id = "@+id/enter_amount">
+	           
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="Payment Amount"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            <TextView
+	                android:id = "@+id/bill_pay_amount"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor = "#C0C0C0"
+	                android:paddingLeft = "20dp"
+	                android:paddingTop = "5dp" />
+
+	        </LinearLayout>
+		            	        
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	                   
+		       	 <Spinner
+			        android:id="@+id/payment_method"
+	    		    android:layout_width="0dp"
+	        		android:layout_height="wrap_content"
+	        		android:layout_weight = "1" />
+	        </LinearLayout>
+	        
+	    	<Button
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "wrap_content"
+	            android:text = "Make Payment" />
+	        
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

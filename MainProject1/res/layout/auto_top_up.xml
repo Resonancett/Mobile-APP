@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width = "fill_parent"
+    android:layout_height = "wrap_content"
+    android:orientation = "vertical" >
+	<ScrollView 
+        android:layout_width="fill_parent" 
+        android:layout_height="0dp"
+        android:layout_weight = "1" >
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+           	 <RelativeLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="50dp"
+	            android:gravity="center_vertical"
+	            android:paddingLeft = "10dp">
+
+	            <Switch 
+	                android:id = "@+id/auto_top_up_on"
+	                android:layout_width = "wrap_content"
+	                android:layout_height = "wrap_content"
+	                android:text = "@string/auto_topup_on" />
+	        </RelativeLayout>
+	        <LinearLayout
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "70dp"            
+	            android:orientation = "vertical"
+	            android:paddingLeft = "10dp"
+	            android:paddingRight = "10dp"
+	            android:paddingTop = "5dp"
+	            android:paddingBottom = "5dp"
+	            android:clickable = "true"
+	            android:id = "@+id/auto_enter_amount">
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/topup_amount"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            <TextView
+	                android:id = "@+id/auto_top_up_amount"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor = "#C0C0C0"
+	                android:paddingLeft = "20dp"
+	                android:paddingTop = "5dp" />
+
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "70dp"
+	            android:orientation = "vertical"
+	            android:paddingLeft = "10dp"
+	            android:paddingRight = "10dp"
+	            android:paddingTop = "5dp"
+	            android:paddingBottom = "5dp"
+	            android:clickable = "true"
+	            android:id = "@+id/auto_enter_recipient">
+	            
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/recipient"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            <TextView
+	                android:id = "@+id/auto_top_up_recipient"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textColor = "#C0C0C0"
+	                android:paddingLeft = "20dp"
+	                android:paddingTop = "5dp" />
+	            
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "70dp"
+	            android:orientation = "vertical"
+	            android:paddingLeft = "10dp"
+	            android:paddingRight = "10dp"
+	            android:paddingTop = "5dp"
+	            android:paddingBottom = "5dp"
+	            android:clickable = "true"
+	            android:id = "@+id/auto_enter_recurrence">
+	            
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/recurrence"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            <TextView
+	                android:id = "@+id/auto_top_up_recurrence"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textColor = "#C0C0C0"
+	                android:paddingLeft = "20dp"
+	                android:paddingTop = "5dp" />
+	            
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "70dp"
+	            android:orientation = "vertical"
+	            android:paddingLeft = "10dp"
+	            android:paddingRight = "10dp"
+	            android:paddingTop = "5dp"
+	            android:paddingBottom = "5dp"
+	            android:clickable = "true"
+	            android:id = "@+id/auto_enter_method">
+	            
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/select_payment"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            <TextView
+	                android:id = "@+id/auto_top_up_method"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textColor = "#C0C0C0"
+	                android:paddingLeft = "20dp"
+	                android:paddingTop = "5dp" />
+	            
+	        </LinearLayout>
+
+	        <RelativeLayout
+	            android:id = "@+id/auto_top_up_button_layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="70dp"
+	            android:gravity="center"
+	            android:paddingLeft = "20dp"
+	            android:paddingRight = "20dp">
+
+	            <Button 
+	                android:id = "@+id/auto_top_up_make_payment"
+	                android:layout_width = "fill_parent"
+	                android:layout_height = "wrap_content"
+	                android:text = "@string/topup_go" />
+	        </RelativeLayout>
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

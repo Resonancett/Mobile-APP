@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_otc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:gravity = "center"
+        android:background = "#000000"
+        android:textColor = "#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ScrollView 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="0dp"
+        android:layout_weight = "1" >
+
+	    <LinearLayout
+	        android:id = "@+id/history_ll"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:paddingTop = "10dp"
+	        android:paddingLeft = "10dp" >
+	        
+	        <TextView 
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "wrap_content"
+	            android:text = "Top up (dummy)     $10.00" />
+	        
+	        <TextView
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "wrap_content"
+	            android:text = "To 7479091     Succeeded" />
+	        
+     	    <TextView 
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "wrap_content"
+	            android:text = "P2P (dummy)    $55.00" />
+	        
+	        <TextView
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "wrap_content"
+	            android:text = "To 1234567     Succeeded" />
+	        
+	    </LinearLayout>
+	</ScrollView>
+	
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity = "bottom" >
+	   
+	</LinearLayout>
+</LinearLayout>
